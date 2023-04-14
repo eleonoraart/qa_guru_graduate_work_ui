@@ -8,17 +8,17 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Tag("quick_tests")
-public class OzonJobTest extends TestBase{
+public class ItOneJobTest extends TestBase{
 
     @Test
     @Description("Открытие страницы поиска вакансий")
     void openOzonVacancyPageTest(){
 
         step("Открываем страницу поиска вакансий", () -> {
-            open("/vacancy");
+            open("/vacancies/");
         });
         step("Проверяем, что страница открыта успешно", () -> {
-        $(".finder__title").shouldHave(text("Поиск по вакансиям"));
+        $(".big-heading.big-heading_2.small-intro__heading").shouldHave(text("Вакансии"));
         });
     }
 }
