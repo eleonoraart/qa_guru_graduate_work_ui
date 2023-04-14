@@ -38,7 +38,7 @@ test {
     useJUnitPlatform()
 }
 
-task run_registr_test(type: Test) {
+task quick_tests(type: Test) {
     useJUnitPlatform {
         includeTags("quick_tests")
     }
