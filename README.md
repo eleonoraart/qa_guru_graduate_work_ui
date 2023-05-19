@@ -18,13 +18,13 @@
 <img width="6%" title="Selenide" src="images/logo/Selenide.svg">
 <img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
 <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
-<img width="6%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
+<img width="5%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
 <img width="6%" title="Gradle" src="images/logo/Gradle.svg">
 <img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
 <img width="6%" title="GitHub" src="images/logo/GitHub.svg">
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
-<img width="6%" title="Jira" src="images/logo/Jira.svg">
+<img width="5%" title="Jira" src="images/logo/Jira.svg">
 </p>
 
 Тесты в данном проекте написаны на языке <code>Java</code>, сборщик - <code>Gradle</code>. Так же были использованы фреймворки <code>JUnit 5</code> и [Selenide](https://selenide.org/).
@@ -44,7 +44,7 @@
 ```
 gradle clean quick_tests
 ```
-При выполнении данной команды в терминале IDE тесты запустятся удаленно <code>Selenoid</code>. 
+При выполнении данной команды в терминале IDE тесты запустятся удаленно в <code>Selenoid</code>. 
 
 ### Установленная конфигурация
 
@@ -67,8 +67,8 @@ gradle clean quick_tests
 
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="images/logo/AllureTestOps.svg"> Интеграция с Allure TestOps
 
-Выполнена интеграция сборки *Jenkins* с *Allure TestOps*, так при каждом запуске автотестов результаты можно посмотреть в приложении. 
-На Dashboard в *Allure TestOps* видна статистика сколько всего тестов, сколько из них добавлены и проходятся вручную, а сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
+Выполнена интеграция сборки <code>Jenkins</code> с <code>Allure TestOps</code>, так при каждом запуске автотестов результаты можно посмотреть в приложении. 
+На Dashboard в <code>Allure TestOps</code> видна статистика сколько всего тестов, сколько из них добавлены и проходятся вручную, а сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
 
 <p align="center">
 <img title="Allure TestOps DashBoard" src="images/screens/allureTestOpsDB.png">
@@ -82,7 +82,7 @@ gradle clean quick_tests
 
 ## <img width="4%" style="vertical-align:middle" title="Jira" src="images/logo/Jira.svg"> Интеграция с Jira
 
-Реализована интеграция *Allure TestOps* с *Jira*, таким образом, что в тикете можно посмотреть какие тест-кейсы были написаны в рамках задачи и результат их прогона.
+Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, таким образом, что в тикете можно посмотреть какие тест-кейсы были написаны в рамках задачи и результат их прогона.
 
 <p align="center">
 <img title="Jira Task" src="images/screens/jiraTask.png">
